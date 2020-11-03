@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Grid_9x9 from '../components/Grid_9x9';
 import ScreenInputKeyBoard from '../components/ScreenInputKeyBoard'
 import { problemList } from "../problems"
+import SelectInput from '@material-ui/core/Select/SelectInput';
 
 
 class Sudoku extends Component {
@@ -89,7 +90,7 @@ class Sudoku extends Component {
                             setTimeout(() => { this.setState({ completeFlag: false }); }, 2500);
                         }else{
                             this.setState({conflicts:old_conflicts, gameBoardBorderStyle: "8px solid #E77"})
-                            setTimeout(() => { this.setState({ gameBoardBorderStyle: "8px solid #333" }); }, 60000);
+                            setTimeout(() => { this.setState({ gameBoardBorderStyle: "8px solid #333" }); }, 60000)
                         }
                     }
                     
@@ -107,10 +108,6 @@ class Sudoku extends Component {
 
     handleScreenKeyboardInput = (num) => {
         if (this.state.selectedGrid.row_index!==-1 && this.state.selectedGrid.col_index!==-1){
-            // console.log(this.state.problem.content)
-            // console.log(this.state.selectedGrid.row_index)
-            // console.log(this.state.selectedGrid.col_index)
-            // console.log(this.state.gridValues)
             let old_gridValues = this.state.gridValues
             if (num===0){
                 num = ''
