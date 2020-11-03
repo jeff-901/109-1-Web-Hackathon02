@@ -8,10 +8,6 @@ import React, { Component } from 'react';
 class Grid_1x1 extends Component {
     constructor(props){
         super(props)
-        // this.gridStyle = {
-        //     color: (this.props.selectedGrid.row_index === this.props.row_index && this.props.selectedGrid.col_index === this.props.col_index) || this.props.conflicted ? "#FFF" : this.props.fixed ? "#666" : "#6CC",
-        //     backgroundColor: this.props.selectedGrid.row_index === this.props.row_index && this.props.selectedGrid.col_index === this.props.col_index ? "#333" : this.props.conflicted ? "#E77" : "#FFF",
-        // };
     }
 
     
