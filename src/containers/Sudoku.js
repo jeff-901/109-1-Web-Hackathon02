@@ -90,7 +90,7 @@ class Sudoku extends Component {
                             setTimeout(() => { this.setState({ completeFlag: false }); }, 2500);
                         }else{
                             this.setState({conflicts:old_conflicts, gameBoardBorderStyle: "8px solid #E77"})
-                            setTimeout(() => { this.setState({ gameBoardBorderStyle: "8px solid #333" }); }, 60000)
+                            setTimeout(() => { this.setState({ gameBoardBorderStyle: "8px solid #333" }); }, 1000)
                         }
                     }
                     
